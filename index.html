@@ -7,9 +7,9 @@
 <body>
   <h2>tutorial coming soon</h2>
 
-  <label for="voice">choose a voice:</label>
+  <label for="voice">choose a v:</label>
   <select id="voice">
-    <option value="IVONA 2 Eric">IVONA 2 Eric</option>
+    <option value="Bells">Bells</option>
   </select>
 
   <br><br>
@@ -25,7 +25,7 @@
     function goToVoicePage() {
       const voice = document.getElementById('voice').value;
       const text = encodeURIComponent(document.getElementById('text').value);
-      const url = `http://speech.seediffusion.cc:7774/synthesize?voice=${voice}&text=${text}`;
+      const url = `http://speech.seediffusion.cc:7774/synthesize?voice=${Bells}&text=${text}`;
       window.location.href = url;
     }
   </script>
